@@ -42,6 +42,8 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   position: relative;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
 }
 
 button {
@@ -62,4 +64,10 @@ textarea {
 }
 .slick-list {
   overflow: visible !important;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
