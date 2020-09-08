@@ -123,59 +123,59 @@
 
 // ============== PRODUCTS =============
 
-// .products {
-//     padding-top: 170px;
-//     padding-bottom: 230px;
-//   background: rgb(45, 80, 209);
-//   background: linear-gradient(
-//     76deg,
-//     rgba(45, 80, 209, 1) 26%,
-//     rgba(9, 47, 187, 1) 57%
-//   );
-//   &__inner {
-//       text-align: center;
-//       margin: 0 auto;
-//       color: #fff;
-//       max-width: 900px;
-//       width: 100%;
+.products {
+    padding-top: 170px;
+    padding-bottom: 230px;
+  background: rgb(45, 80, 209);
+  background: linear-gradient(
+    76deg,
+    rgba(45, 80, 209, 1) 26%,
+    rgba(9, 47, 187, 1) 57%
+  );
+  &__inner {
+      text-align: center;
+      margin: 0 auto;
+      color: #fff;
+      max-width: 900px;
+      width: 100%;
       
-//   }
-//   &__title {
-//     font-size: 60px;
-//     line-height: 70px;
-//     font-weight: 400;
-//     span {
-//         display: block;
-//         font-weight: 700;
-//     }
-//   }
-//   &__text {
-//     font-size: 20px;
-//     line-height: 40px;
-//     font-weight: 500;
-//     margin: 40px 0 70px 0;
-//   }
-//   &__bottom {
-//       display: flex;
-//       justify-content: center;
-//   }
-//   &__btn {
-//       border-radius: 50px;
-//       background: transparent;
-//       font-size: 16px;
-//       color: #fff;
-//       border: 1px solid #fff;
-//       width: 190px;
-//       padding: 15px 0;
-//       transition: .3s;
-//       &:hover {
-//           background: #fff;
-//           color: $blue;
-//       }
-//   }
-//   &__btn + &__btn {
-//       margin-left: 25px;
-//   }
-// }
+  }
+  &__title {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 400;
+    span {
+        display: block;
+        font-weight: 700;
+    }
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
+    margin: 40px 0 70px 0;
+  }
+  &__bottom {
+      display: flex;
+      justify-content: center;
+  }
+  &__btn {
+      border-radius: 50px;
+      background: transparent;
+      font-size: 16px;
+      color: #fff;
+      border: 1px solid #fff;
+      width: 190px;
+      padding: 15px 0;
+      transition: .3s;
+      &:hover {
+          background: #fff;
+          color: $blue;
+      }
+  }
+  &__btn + &__btn {
+      margin-left: 25px;
+  }
+}
 
 @import "media";
