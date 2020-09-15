@@ -472,7 +472,79 @@
 .release {
   background: #f6f7fb;
   padding: 115px 0 120px;
+
+  &__menu {
+    padding: 0 60px 0 30px;
+    background: #fff;
+    margin-bottom: 25px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      border-radius: 30px;
+      font-size: 15px;
+      padding: 8px 20px;
+      background: #f1f3f6;
+      color: $text;
+      @extend %quicksand-medium;
+      transition: .1s;
+    }
+    button {
+      &:hover {
+          color: #fff;
+          background: $blue;
+      }
+    }
+    button + button {
+      margin-left: 9px;
+    }
+  }
+  &__btn {
+    font-size: 16px;
+    padding: 17px 28px;
+    background: $blue;
+    border-radius: 30px;
+    color: #fff;
+    display: block;
+    width: 190px;
+    margin: 0 auto;
+  }
+  &-btn {
+    display: flex;
+  }
+  &__btn-points {
+    margin-left: 24px;
+    position: relative;
+    width: 5px;
+    height: 20px;
+    cursor: pointer;
+    &::after,
+    &::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      background: #a3b1c4;
+      height: 5px;
+      border-radius: 50%;
+    }
+    &::after {
+      bottom: 0;
+    }
+    &::before {
+      top: 0;
+    }
+    span {
+      position: absolute;
+      width: 100%;
+      background: #a3b1c4;
+      height: 5px;
+      border-radius: 50%;
+      top: 7px;
+    }
+  }
 }
+
 
 
 
