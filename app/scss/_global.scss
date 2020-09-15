@@ -42,8 +42,7 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   position: relative;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 400;
+  @extend %quicksand-regular;
 }
 
 button {
@@ -62,12 +61,45 @@ textarea {
 .slick-slide {
   outline: none;
 }
-.slick-list {
-  overflow: visible !important;
-}
+// .slick-list {
+//   overflow: visible !important;
+// }
 
 .container {
   max-width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.title {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.section-top {
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  height: 111px;
+  padding: 0 28px;
+  margin-bottom: 50px;
+}
+
+// ======= RATEYO
+.jq-ry-group-wrapper {
+  position: relative;
+  line-height: 0;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group.jq-ry-rated-group {
+  z-index: 11;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+// ============ REATEYO
