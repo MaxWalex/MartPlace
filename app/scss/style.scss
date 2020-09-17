@@ -321,10 +321,6 @@
   padding: 115px 0;
   background: #eff1f5;
   &-btn {
-    width: 110px;
-    height: 45px;
-    background: $violet;
-    border-radius: 30px;
   }
   &-content {
     display: flex;
@@ -488,12 +484,12 @@
       background: #f1f3f6;
       color: $text;
       @extend %quicksand-medium;
-      transition: .1s;
+      transition: 0.1s;
     }
     button {
       &:hover {
-          color: #fff;
-          background: $blue;
+        color: #fff;
+        background: $blue;
       }
     }
     button + button {
@@ -522,7 +518,7 @@
     &::after,
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       width: 100%;
       background: #a3b1c4;
       height: 5px;
@@ -545,7 +541,237 @@
   }
 }
 
+// ============= FFOLLOWERS ==========
 
+.followers {
+  padding: 115px 0;
+  background: #eff1f5;
+  &__slider {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    .slick-arrow {
+      position: absolute;
+      top: -119px;
+      fill: #fff;
+    }
+    .slick-next {
+      right: 56px;
+    }
+    .slick-prev {
+      right: 96px;
+      z-index: 3;
+    }
+    .slick-slide {
+      // width: 362px !important;
+    }
+  }
+  .cart__item {
+    margin-right: 27px;
+  }
+}
+
+// ============= FACT =============
+
+.fact {
+  background: #212225;
+  padding: 95px 0 85px;
+  &__inner  {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__item {
+    text-align: center;
+    max-width: 165px;
+  }
+  // CASE
+  &__case {
+    position: relative;
+    color: #feb71d;
+    &::before {
+      content: "\f0b1";
+      font-size: 48px;
+      font-family: 'icomoon';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  // CLOUD
+  &__cloud {
+    position: relative;
+    color: #58c9e9;
+    &::before {
+      content: "\f0ed";
+      font-size: 48px;
+      font-family: 'icomoon';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  // SMILE
+  &__smile {
+    position: relative;
+    color: #71d14e;
+    &::before {
+      content: "\f118";
+      font-size: 48px;
+      font-family: 'icomoon';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  // USERS 
+  &__users {
+    position: relative;
+    color: #ff6a6d;
+    &::before {
+      content: "\f0c0";
+      font-size: 48px;
+      font-family: 'icomoon';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__item-content {
+    padding-top: 85px;
+    font-size: 36px;
+    line-height: 40px;
+    span {
+      font-size: 18px;
+      margin-top: 15px;
+      color: #c4c4c5;
+      display: block;
+    }
+  }
+}
+
+// ================= CHOOSE =============
+
+.choose {
+  padding: 115px 0 80px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  &__item {
+    position: relative;
+    max-width: 362px;
+    text-align: center;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+  }
+  &__num {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 48px;
+    color: #f0f4fe;
+  }
+  // CERTIFICATE
+  &__certificate {
+    position: relative;
+    &::before {
+      content: "\f2c3";
+      position: absolute;
+      font-size: 60px;
+      font-family: 'icomoon';
+      left: 50%;
+      transform: translateX(-50%);
+      top: 55px;
+      color: $blue;
+    }
+  }
+  // MAGIC
+  &__magic {
+    position: relative;
+    &::before {
+      content: "\e997";
+      position: absolute;
+      font-size: 60px;
+      font-family: 'icomoon';
+      left: 50%;
+      transform: translateX(-50%);
+      top: 55px;
+      color: #7f4ec2;
+    }
+  }
+  // LOCK
+  &__lock {
+    position: relative;
+    &::before {
+      content: "\f023";
+      position: absolute;
+      font-size: 60px;
+      font-family: 'icomoon';
+      left: 50%;
+      transform: translateX(-50%);
+      top: 55px;
+      color: #77de51;
+    }
+  }
+  // BARS
+  &__bars {
+    position: relative;
+    &::before {
+      color: #feb71d;
+      content: "\f080";
+      position: absolute;
+      font-size: 60px;
+      font-family: 'icomoon';
+      left: 50%;
+      transform: translateX(-50%);
+      top: 55px;
+    }
+  }
+  // LEAF
+  &__leaf {
+    position: relative;
+    &::before {
+      content: "\e9a4";
+      position: absolute;
+      font-size: 60px;
+      font-family: 'icomoon';
+      left: 50%;
+      transform: translateX(-50%);
+      top: 55px;
+      color: #58c9e9;
+    }
+  }
+  // PHONE
+  &__phone {
+    position: relative;
+    &::before {
+      content: "\e900";
+      position: absolute;
+      font-size: 60px;
+      font-family: 'icomoon';
+      left: 50%;
+      transform: translateX(-50%);
+      top: 55px;
+      color: #ff6a6d;
+    }
+  }
+  &__item-title {
+    padding-top: 155px;
+  }
+  &__item-text {
+    padding: 30px 30px 52px 30px;
+    font-size: 16px;
+    line-height: 30px;
+    color: $text;
+  }
+}
 
 
 
