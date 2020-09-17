@@ -43,6 +43,7 @@ body {
   overflow-x: hidden;
   position: relative;
   @extend %quicksand-regular;
+  // font-family: 'Quicksand', sans-serif;
 }
 
 button {
@@ -71,11 +72,18 @@ textarea {
   margin: 0 auto;
 }
 
+.fluid-container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .title {
   font-size: 30px;
   line-height: 36px;
 }
-
+.btn {
+  @extend %btn
+}
 .section__title {
   font-size: 36px;
   span {

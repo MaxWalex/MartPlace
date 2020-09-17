@@ -320,8 +320,6 @@
 .feature__slider {
   padding: 115px 0;
   background: #eff1f5;
-  &-btn {
-  }
   &-content {
     display: flex;
     justify-content: space-between;
@@ -562,9 +560,6 @@
       right: 96px;
       z-index: 3;
     }
-    .slick-slide {
-      // width: 362px !important;
-    }
   }
   .cart__item {
     margin-right: 27px;
@@ -576,7 +571,7 @@
 .fact {
   background: #212225;
   padding: 95px 0 85px;
-  &__inner  {
+  &__inner {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -592,7 +587,7 @@
     &::before {
       content: "\f0b1";
       font-size: 48px;
-      font-family: 'icomoon';
+      font-family: "icomoon";
       position: absolute;
       top: 0;
       left: 50%;
@@ -606,7 +601,7 @@
     &::before {
       content: "\f0ed";
       font-size: 48px;
-      font-family: 'icomoon';
+      font-family: "icomoon";
       position: absolute;
       top: 0;
       left: 50%;
@@ -620,21 +615,21 @@
     &::before {
       content: "\f118";
       font-size: 48px;
-      font-family: 'icomoon';
+      font-family: "icomoon";
       position: absolute;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
     }
   }
-  // USERS 
+  // USERS
   &__users {
     position: relative;
     color: #ff6a6d;
     &::before {
       content: "\f0c0";
       font-size: 48px;
-      font-family: 'icomoon';
+      font-family: "icomoon";
       position: absolute;
       top: 0;
       left: 50%;
@@ -685,7 +680,7 @@
       content: "\f2c3";
       position: absolute;
       font-size: 60px;
-      font-family: 'icomoon';
+      font-family: "icomoon";
       left: 50%;
       transform: translateX(-50%);
       top: 55px;
@@ -699,7 +694,7 @@
       content: "\e997";
       position: absolute;
       font-size: 60px;
-      font-family: 'icomoon';
+      font-family: "icomoon";
       left: 50%;
       transform: translateX(-50%);
       top: 55px;
@@ -713,7 +708,7 @@
       content: "\f023";
       position: absolute;
       font-size: 60px;
-      font-family: 'icomoon';
+      font-family: "icomoon";
       left: 50%;
       transform: translateX(-50%);
       top: 55px;
@@ -728,7 +723,7 @@
       content: "\f080";
       position: absolute;
       font-size: 60px;
-      font-family: 'icomoon';
+      font-family: "icomoon";
       left: 50%;
       transform: translateX(-50%);
       top: 55px;
@@ -741,7 +736,7 @@
       content: "\e9a4";
       position: absolute;
       font-size: 60px;
-      font-family: 'icomoon';
+      font-family: "icomoon";
       left: 50%;
       transform: translateX(-50%);
       top: 55px;
@@ -755,7 +750,7 @@
       content: "\e900";
       position: absolute;
       font-size: 60px;
-      font-family: 'icomoon';
+      font-family: "icomoon";
       left: 50%;
       transform: translateX(-50%);
       top: 55px;
@@ -773,8 +768,134 @@
   }
 }
 
+// =========== BUYSELL ==========
 
+.buysell {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  &__sell {
+    background-position: right;
+  }
+  &__buy {
+    background-position: left;
+    margin-left: -3px;
+    z-index: -1;
+  }
+  &__inner {
+    max-width: 580px;
+  }
+  &__box {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+  }
+  &__img {
+    min-height: 110px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__title {
+    font-size: 36px;
+    line-height: 40px;
+    margin: 38px 0 15px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 47px;
+    max-width: 585px;
+    margin: 0 auto;
+    margin-bottom: 47px;
+  }
+  &__btn {
+    width: 170px;
+    background: #fff;
+    border-radius: 30px;
+    padding: 17px 10px;
+    font-size: 16px;
+  }
+  &__buy-btn {
+    color: $violet;
+  }
+  &__sell-btn {
+    color: $blue;
+  }
+}
 
+// =============== CLIENTS ============
 
+.clients {
+  padding: 115px 0 120px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 55px;
+  }
+  &__item {
+    max-width: 555px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    padding: 40px 35px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: $blue;
+    }
+  }
+  &__item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  &__item-top__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item-top__info-img {
+    width: 80px;
+    height: 80px;
+    background: #808080;
+    border-radius: 50%;
+  }
+  &__item-top__info-name {
+    font-size: 20px;
+    margin-left: 17px;
+    span {
+      font-size: 16px;
+      display: block;
+      margin-top: 15px;
+      color: $text;
+    }
+  }
+  &__item-top__info-cloud {
+    &::before {
+      font-size: 60px;
+      color: #e8e8e8;
+      content: "\f0e5";
+      font-family: "icomoon";
+    }
+  }
+  &__item-text {
+    font-size: 16px;
+    line-height: 30px;
+    color: $text;
+  }
+  &__btn-link {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+  }
+}
 
 @import "media";
