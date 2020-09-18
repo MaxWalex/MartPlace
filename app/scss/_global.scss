@@ -159,6 +159,10 @@ textarea {
       }
     }
   }
+  &__item-wrapper {
+    padding: 24px 30px 0px 25px;
+    background: #fff;
+  }
   // ========== HOVER 
   &__item-img__hover {
     transition: .3s;
@@ -204,11 +208,8 @@ textarea {
   // ================= 
 
   // ============= CONTENT
-
   &__item-content {
-    padding: 24px 30px 20px 25px;
     background: #fff;
-
   }
   &__item-title {
     font-size: 20px;
@@ -263,6 +264,8 @@ textarea {
     justify-content: space-between;
     align-items: center;
     font-size: 15px;
+    border-top: 1px solid #ececec;
+    padding: 15px 25px 13px 25px;
   }
   &__item-content__price {
     @extend %quicksand-medium;
@@ -280,8 +283,8 @@ textarea {
     &:before {
       position: absolute;
       color: $violet;
-      content: '\f08a';
-      font-family: 'icomoon';
+      content: "\e840";
+      font-family: 'Linearicons-Free';
       left: 0;
     }
   }
@@ -292,9 +295,9 @@ textarea {
     &::before {
       position: absolute;
       left: 0;
-      content: '\f07a';
+      content: '\e82e';
       color: $blue;
-      font-family: 'icomoon';
+      font-family: 'Linearicons-Free';
     }
   }
 }

@@ -265,7 +265,7 @@
       background: #dcdcdc;
     }
     &::after {
-      font-family: "icomoon";
+      font-family: "Linearicons-Free";
       content: "\f107";
       position: absolute;
       font-size: 20px;
@@ -422,7 +422,7 @@
     position: relative;
     padding-left: 27px;
     &::before {
-      font-family: "icomoon";
+      font-family: "Linearicons-Free";
       position: absolute;
       color: $violet;
       content: "\f08a";
@@ -435,7 +435,7 @@
     padding-left: 24px;
     position: relative;
     &::before {
-      font-family: "icomoon";
+      font-family: "Linearicons-Free";
       position: absolute;
       color: $blue;
       left: 0;
@@ -585,9 +585,9 @@
     position: relative;
     color: #feb71d;
     &::before {
-      content: "\f0b1";
+      content: "\e84c";
       font-size: 48px;
-      font-family: "icomoon";
+      font-family: "Linearicons-Free";
       position: absolute;
       top: 0;
       left: 50%;
@@ -599,9 +599,9 @@
     position: relative;
     color: #58c9e9;
     &::before {
-      content: "\f0ed";
+      content: "\e80b";
       font-size: 48px;
-      font-family: "icomoon";
+      font-family: "Linearicons-Free";
       position: absolute;
       top: 0;
       left: 50%;
@@ -613,9 +613,9 @@
     position: relative;
     color: #71d14e;
     &::before {
-      content: "\f118";
+      content: "\e854";
       font-size: 48px;
-      font-family: "icomoon";
+      font-family: "Linearicons-Free";
       position: absolute;
       top: 0;
       left: 50%;
@@ -627,9 +627,9 @@
     position: relative;
     color: #ff6a6d;
     &::before {
-      content: "\f0c0";
+      content: "\e82b";
       font-size: 48px;
-      font-family: "icomoon";
+      font-family: "Linearicons-Free";
       position: absolute;
       top: 0;
       left: 50%;
@@ -677,10 +677,10 @@
   &__certificate {
     position: relative;
     &::before {
-      content: "\f2c3";
+      content: "\e822";
       position: absolute;
       font-size: 60px;
-      font-family: "icomoon";
+      font-family: "Linearicons-Free";
       left: 50%;
       transform: translateX(-50%);
       top: 55px;
@@ -691,10 +691,10 @@
   &__magic {
     position: relative;
     &::before {
-      content: "\e997";
+      content: "\e803";
       position: absolute;
       font-size: 60px;
-      font-family: "icomoon";
+      font-family: "Linearicons-Free";
       left: 50%;
       transform: translateX(-50%);
       top: 55px;
@@ -705,10 +705,10 @@
   &__lock {
     position: relative;
     &::before {
-      content: "\f023";
+      content: "\e80f";
       position: absolute;
       font-size: 60px;
-      font-family: "icomoon";
+      font-family: "Linearicons-Free";
       left: 50%;
       transform: translateX(-50%);
       top: 55px;
@@ -720,10 +720,10 @@
     position: relative;
     &::before {
       color: #feb71d;
-      content: "\f080";
+      content: "\e843";
       position: absolute;
       font-size: 60px;
-      font-family: "icomoon";
+      font-family: "Linearicons-Free";
       left: 50%;
       transform: translateX(-50%);
       top: 55px;
@@ -733,10 +733,10 @@
   &__leaf {
     position: relative;
     &::before {
-      content: "\e9a4";
+      content: "\e849";
       position: absolute;
       font-size: 60px;
-      font-family: "icomoon";
+      font-family: "Linearicons-Free";
       left: 50%;
       transform: translateX(-50%);
       top: 55px;
@@ -747,10 +747,10 @@
   &__phone {
     position: relative;
     &::before {
-      content: "\e900";
+      content: "\e831";
       position: absolute;
       font-size: 60px;
-      font-family: "icomoon";
+      font-family: "Linearicons-Free";
       left: 50%;
       transform: translateX(-50%);
       top: 55px;
@@ -841,7 +841,7 @@
     padding: 40px 35px;
     position: relative;
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 2px;
       height: 100%;
@@ -881,8 +881,8 @@
     &::before {
       font-size: 60px;
       color: #e8e8e8;
-      content: "\f0e5";
-      font-family: "icomoon";
+      content: "\e83f";
+      font-family: "Linearicons-Free";
     }
   }
   &__item-text {
@@ -897,5 +897,330 @@
     width: 200px;
   }
 }
+
+// =============== NEWS ===========
+
+.news {
+  padding: 113px 0 115px;
+  background: #eff1f5;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  &__item-title {
+    font-size: 22px;
+  }
+  .cart__item {
+    position: relative;
+    min-height: 475px;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+  }
+  .cart__item-content__bottom {
+    color: #7e7e7e;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .cart__item-content__date {
+    position: relative;
+    padding-left: 25px;
+    padding-right: 48px;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 1px;
+      height: 40px;
+      background: #ececec;
+      top: -12px;
+    }
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: "\e864";
+      font-family: "Linearicons-Free";
+      color: $blue;
+    }
+  }
+  .cart__item-content__comment {
+    position: relative;
+    padding-left: 25px;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: "\e83f";
+      font-family: "Linearicons-Free";
+    }
+  }
+  .cart__item-content__watch {
+    position: relative;
+    padding-left: 25px;
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-family: "Linearicons-Free";
+      content: "\e81b";
+    }
+  }
+}
+
+// ============= SUPPORT ===========
+
+.support {
+  padding: 60px 0 50px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: #e8eaf3;
+    width: 1px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+  }
+  &__item {
+    // background-size: cover;
+    padding-top: 150px;
+    background-repeat: no-repeat;
+    min-height: 125px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  &__item-guarantee {
+    color: $blue;
+  }
+  &__item-support {
+    color: $violet;
+  }
+}
+
+// ========= BANNER ==========
+
+.banner {
+  padding: 100px 0 105px;
+  background: rgb(98, 31, 145);
+  background: linear-gradient(
+    80deg,
+    rgba(98, 31, 145, 1) 22%,
+    rgba(62, 41, 177, 1) 54%,
+    rgba(13, 55, 217, 1) 78%
+  );
+  color: #fff;
+  &__inner {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 570px;
+    @extend %quicksand-regular;
+  }
+  &__title {
+    font-size: 36px;
+  }
+  &__text {
+    font-size: 18px;
+    margin: 20px 0 40px;
+    color: #d6d5e1;
+  }
+  &__btn {
+    @extend %btn;
+    color: $blue;
+    background-color: #fff;
+  }
+}
+
+ 
+  
+  
+  
+  
+  
+// ========== FOOTER ==========
+
+.footer {
+  background-color: #262b30;
+  padding-top: 115px;
+  &__inner {
+      color: #a4a5a5;
+      font-size: 15px;
+      line-height: 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+    }
+    &__title {
+      margin-bottom: 30px;
+      font-size: 18px;
+      color: #fff;
+      line-height: 42px;
+    }
+    &__copy {
+      margin-top: 110px;
+      background-color: #192027;
+      text-align: center;
+      padding: 35px 0 30px;
+      &-text {
+        color: $text;
+        span {
+          color: #fff;
+        }
+      }
+    }
+    &__list-menu {
+      li + li {
+        margin-top: 7px;
+      }
+    }
+    &__info-text {
+      margin-bottom: 25px;
+    }
+    &__info {
+      max-width: 270px;
+    }
+    &__contact {
+      li {
+        position: relative;
+        padding-left: 25px;
+        }
+        &::before {
+          position: absolute;
+          left: 0;
+          font-size: 16px;
+          font-family: "Linearicons-Free";
+          color: #fff;
+        }
+        // & + li {
+        //   margin-top: 15px;
+        // }
+        
+      }
+      a {
+        transition: .1s;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      &-tel {
+        &::before {
+          content: "\e831";
+        }
+      }
+      &-email {
+        &::before {
+          content: "\e818";
+        }
+      }
+      &-marker {
+        &::before {
+          content: "\e833";
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      } 
+    a {
+      transition: .1s;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &__form {
+      position: relative;
+      margin: 30px 0 40px;
+      input {
+        width: 100%;
+        height: 50px;
+        padding: 0 30px;
+        border-radius: 30px;
+        &::placeholder {
+          font-size: 15px;
+          color: #ababab;
+        }
+      }
+      button {
+        @extend %btn;
+        position: absolute;
+        transform: translateX(-100%);
+        height: 50px;
+      }
+    }
+  &__newsletter {
+    max-width: 375px;
+  }
+  &__socials {
+    max-width: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    svg {
+      fill: #fff;
+      transition: .1s;
+      &:hover {
+        transform: scale(0.7);
+      }
+    }
+  }
+  &__facebook {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: $blue;
+    @extend %socials-position;
+    // &::before {
+    //   position: absolute;
+    //   content: '';
+    //   font-size: 16px;
+    // }
+  }
+  &__paintrest {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    @extend %socials-position;
+    background-color: #9c0c1c;
+  }
+  &__dribbling {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    @extend %socials-position;
+    background-color: #ea4c89;
+  }
+  &__linkedin {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    @extend %socials-position;
+    background-color: #0da6be;
+  }
+  &__google {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    @extend %socials-position;
+    background-color: #f05b44;
+  }
+  &__twitter {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    @extend %socials-position;
+    background-color: #19b2f5;
+  }
+} 
+
 
 @import "media";
