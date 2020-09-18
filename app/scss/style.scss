@@ -254,22 +254,27 @@
     color: #747474;
     position: absolute;
     right: 20px;
-    padding: 18px 48px 18px 20px;
+    background-color: transparent;
+    appearance: none;
+    select {
+      padding-right: 55px;
+    }
     &::before {
       content: "";
       position: absolute;
-      left: 0;
-      top: 2px;
+      left: -20px;
+      top: -16px;
       height: 53px;
       width: 1px;
       background: #dcdcdc;
+      transition: .3s;
     }
     &::after {
       font-family: "Linearicons-Free";
       content: "\f107";
       position: absolute;
       font-size: 20px;
-      right: 0;
+      right: 0px;
       transform: translateY(-50%);
       top: 50%;
     }
