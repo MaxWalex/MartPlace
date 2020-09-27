@@ -44,8 +44,18 @@ body {
   position: relative;
   @extend %quicksand-regular;
   // font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
 }
-
+html, body {
+  height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
 button {
   cursor: pointer;
   border: none;
@@ -309,4 +319,115 @@ textarea {
   height: 45px;
   background: $violet;
   border-radius: 30px;
+}
+
+// ================== BREADCRUMBS ==================
+
+.breadcrumbs {
+  margin: 0 auto;
+  color: #fff;
+  &__inner {
+    padding-top: 30px;
+  }
+  &__list {
+    display: flex;
+    li, span {
+      font-size: 15px;
+      margin-right: 8px;
+      & + li, span {
+        position: relative;
+        padding-left: 17px;
+        &::before {
+          position: absolute;
+          content: '/';
+          left: 0px;
+        }
+      }
+      &:last-child {
+        color: #bfcad7;
+      }
+    }
+  }
+}
+
+// ====================== RANGE ===================
+
+.irs-min,
+.irs-max {
+  display: none;
+}
+.irs-line {
+  background-color: #efedf3;
+}
+.irs--flat .irs-handle {
+  width: 17px;
+  height: 17px;
+  border: 5px solid $blue;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.irs--flat .irs-handle {
+  top: 19px;
+}
+.irs--flat .irs-handle>i:first-child {
+  display: none;
+}
+.irs--flat .irs-line,
+.irs--flat .irs-bar {
+  height: 5px;
+}
+.irs--flat .irs-bar {
+  background-color: #7347c1;
+}
+.irs--flat .irs-from, .irs--flat .irs-single, .irs--flat .irs-to {
+  color: #7347c1;
+  font-size: 15px;
+  background-color: #f1ecf9;
+  border-radius: 30px;
+  padding: 11px 0;
+  width: 79px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.irs--flat .irs-from:before, .irs--flat .irs-single:before, .irs--flat .irs-to:before {
+  display: none;
+}
+.irs-to,
+.irs-from,
+.irs-single {
+  top: 50px;
+}
+
+// ================================================
+
+// ================ PAGINATIONS ==================
+
+.paginations {
+  margin-top: 30px;
+  &__list {
+    li {
+      display: inline-block;
+      & + li {
+        margin-left: 6px;
+      }
+    }
+    a,
+    span {
+      font-size: 16px;
+      box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #263238;
+      width: 53px;
+      height: 38px;
+      background-color: #fff;
+      border-radius: 20px;
+      &.active {
+        background-color: $blue;
+        color: #fff;
+      }
+    }
+  }
 }

@@ -54,44 +54,41 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.lnr-envelope:before {
-	content: "\e818";
-}
 .lnr-alarm:before {
 	content: "\e858";
 }
-.lnr-bubble:before {
-	content: "\e83f";
-}
-.lnr-map-marker:before {
-	content: "\e833";
-}
-.lnr-clock:before {
-	content: "\e864";
-}
-.lnr-eye:before {
-	content: "\e81b";
-}
-.lnr-leaf:before {
-	content: "\e849";
-}
-.lnr-heart-pulse:before {
-	content: "\e840";
+.lnr-envelope:before {
+	content: "\e818";
 }
 .lnr-cart:before {
-  content: '\e82e';
+	content: "\e82e";
+}
+.lnr-magnifier:before {
+	content: "\e86f";
+}
+.lnr-chevron-left:before {
+	content: "\e875";
+}
+.lnr-chevron-right:before {
+	content: "\e876";
+}
+.lnr-heart:before {
+	content: "\e813";
 }
 .lnr-briefcase:before {
 	content: "\e84c";
 }
-.lnr-cloud-down:before {
-  content: '\e80b';
+.lnr-cloud-download:before {
+	content: "\e80b";
 }
 .lnr-smile:before {
 	content: "\e854";
 }
 .lnr-users:before {
 	content: "\e82b";
+}
+.lnr-user:before {
+	content: "\e82a";
 }
 .lnr-license:before {
 	content: "\e822";
@@ -105,6 +102,63 @@
 .lnr-chart-bars:before {
 	content: "\e843";
 }
-.lnr-phone:before {
-	content: "\e831";
+.lnr-leaf:before {
+	content: "\e849";
+}
+.lnr-laptop-phone:before {
+	content: "\e83d";
+}
+.lnr-bubble:before {
+	content: "\e83f";
+}
+.lnr-clock:before {
+	content: "\e864";
+}
+.lnr-eye:before {
+	content: "\e81b";
+}
+.lnr-phone-handset:before {
+	content: "\e830";
+}
+.lnr-map-marker:before {
+	content: "\e833";
+}
+.lnr-arrow-left:before {
+	content: "\e879";
+}
+.lnr-arrow-right:before {
+	content: "\e87a";
+}
+.lnr-chevron-down:before {
+	content: "\e874";
+}
+.lnr-inbox:before {
+	content: "\e81a";
+}
+.lnr-question-circle:before {
+	content: "\e87d";
+}
+.lnr-home:before {
+	content: "\e800";
+}
+.lnr-cog:before {
+	content: "\e810";
+}
+.lnr-book:before {
+	content: "\e828";
+}
+.lnr-upload:before {
+	content: "\e866";
+}
+.lnr-exit:before {
+	content: "\e820";
+}
+.lnr-dice:before {
+	content: "\e812";
+}
+.lnr-star:before {
+	content: "\e814";
+}
+.lnr-trash:before {
+	content: "\e811";
 }
