@@ -14,7 +14,7 @@ html {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none;  
   color: inherit;
   font-family: inherit;
   display: inline-block;
@@ -42,8 +42,8 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   position: relative;
-  @extend %quicksand-regular;
-  // font-family: 'Quicksand', sans-serif;
+  // @extend %quicksand-regular;
+  font-family: 'Quicksand', sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -428,6 +428,73 @@ textarea {
         background-color: $blue;
         color: #fff;
       }
+    }
+  }
+}
+
+// ========================== DROPDOWN ======================
+
+.header__menu {
+  background-color: #fff;
+  padding: 20px 18px 30px 18px;
+  position: absolute;
+  z-index: 5;
+  border-top: 1px solid $blue;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 28px;
+    width: 0; 
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 8px solid $blue;
+    transform: translateY(-100%);
+    z-index: 10;
+  }
+}
+
+.menu__nav-list {
+  position: relative;
+  &:hover {
+    .menu__nav {
+      transform: translateY(0);
+    }
+    .menu__pages-box {
+      transform: translate(-35%, 0%);
+    }
+  }
+}
+
+.menu__nav {
+  position: absolute;
+  transform: translateY(-200%);
+  top: 81px;
+  width: 270px;
+  background-color: #fff;
+  border-top: 1px solid $blue;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px 20px 30px 20px;
+  z-index: 10;
+  li {
+    & + li {
+      margin-left: 0 !important;
+    } 
+  }
+  a {
+    border-radius: 3px !important;
+    text-transform: capitalize !important;
+    color: #54667a !important;
+    width: 100%;
+    background-color: transparent;
+    padding: 15px 8px;
+    transition: all .1s;
+    line-height: 15px !important;
+    &:hover {
+      color: #fff !important;
+      background-color: $blue;
     }
   }
 }

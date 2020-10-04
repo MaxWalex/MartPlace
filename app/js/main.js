@@ -52,6 +52,16 @@ $(function () {
     $('.carts__content').removeClass('active')
   })
 
+  // $('.header__basket-trash').one("click", function () {
+  //   $('.header__basket-item').on('click', function() {
+  //     $(this).css('display', 'none')
+  //   })
+  // })
+
   let mixer = mixitup(".release__inner");
 
 });
+
+// ==================== JAVA SCRIPT ================
+
+
