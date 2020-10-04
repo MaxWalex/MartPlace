@@ -58,6 +58,10 @@ $(function () {
   //   })
   // })
 
+  $('.header__burger').on("click", function() {
+    $('.menu__list, .header__burger').toggleClass('active')
+  })
+
   let mixer = mixitup(".release__inner");
 
 });

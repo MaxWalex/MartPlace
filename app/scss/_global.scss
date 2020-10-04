@@ -3,6 +3,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth; // Для плавного перелистывание страници
+  overflow-x: hidden;
 }
 
 *,
@@ -496,5 +497,21 @@ textarea {
       color: #fff !important;
       background-color: $blue;
     }
+  }
+}
+
+// ========================= BURGER MENU ====================
+
+.header__burger.active {
+  span {
+    transform: scale(0);
+  }
+  &::before {
+    transform: rotate(-45deg);
+    top: 9px;
+  }
+  &::after {
+    bottom: 9px;
+    transform: rotate(45deg);
   }
 }
