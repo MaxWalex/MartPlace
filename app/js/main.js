@@ -1,4 +1,5 @@
 $(function () {
+  // =============== RATEYO
 
   $(".feature__slider-bottom-star").rateYo({
     starWidth: "17px",
@@ -58,9 +59,45 @@ $(function () {
   //   })
   // })
 
+  // ============================ BURGER ======================
+
   $('.header__burger').on("click", function() {
     $('.menu__list, .header__burger').toggleClass('active')
   })
+
+  // ================== TABS ============================
+
+  $('.single-product__tabs .tab').on('click', function (event) {
+    var id = $(this).attr('data-id');
+    $('.single-product__tabs').find('.tab-item').removeClass('active-tab').hide();
+    $('.single-product__tabs .tabs').find('.tab').removeClass('active');
+    $(this).addClass('active');
+    $('#' + id).addClass('active-tab').fadeIn();
+    return false;
+  });
+
+  // ==================== CHECK ICON =========================
+
+  $('.check-icon__default').on("click", function () {
+    $('.product__info-license__single .check-icon__default').css('display', 'block')
+    $('.check-icon').css('display', 'block') 
+    $(this).css('display', 'none')
+  })
+
+  $('.check-icon__default').on("click", function () {
+    $('.product__info-license__multi .check-icon__default').css('display', 'block')
+    $('.check-icon').css('display', 'block') 
+    $(this).css('display', 'none')
+  })
+
+  // ================ RATEYO
+
+  $(".prodcut__info-total--rate").rateYo({
+    starWidth: "17px",
+    rating: 4.5,
+    ratedFill: "#ffc000",
+    starWidth: "20px"
+  });
 
   let mixer = mixitup(".release__inner");
 
