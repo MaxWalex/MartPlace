@@ -2596,6 +2596,39 @@ background-color: $blue;
     margin: 0 auto;
   }
 }
+// =========================== PAGE 404 ==================
+.top--404 {
+  padding: 55px 0 55px;
+  .breadcrumbs {
+    margin: 0;
+    margin-bottom: 20px;
+    &__inner {
+      padding-top: 0;
+    }
+  }
+  .search__title {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+.page-404 {
+  padding: 80px 0 100px;
+  text-align: center;
+  &__img {
+    width: 393px;
+    height: 447px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
+  &__title {
+    font-size: 30px;
+    color: #000;
+    margin: 50px 0 40px;
+  }
+  &__btn {
+    @extend %btn;
+  }
+}
 
 
 
