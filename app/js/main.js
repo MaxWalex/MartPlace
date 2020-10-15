@@ -99,6 +99,18 @@ $(function () {
     starWidth: "20px"
   });
 
+  $('.form__check-icon__default').on("click", function () {
+    $('.form__check .form__check-icon').css('display', 'block')
+    $('.form__check-icon').css('display', 'block') 
+    $(this).css('display', 'none')
+  })
+
+  $('.form__check-icon').on("click", function () {
+    $('.form__check .check-icon__default').css('display', 'block')
+    $('.form__check-icon__default').css('display', 'block') 
+    $(this).css('display', 'none')
+  })
+
   let mixer = mixitup(".release__inner");
 
 });

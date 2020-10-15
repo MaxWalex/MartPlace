@@ -2389,7 +2389,7 @@ background-color: $blue;
     // }
   }
 }
-.check-icon {
+.check-icon, .form__check-icon {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -2397,7 +2397,7 @@ background-color: $blue;
   left: 0;
   cursor: pointer;
 }
-.check-icon__default {
+.check-icon__default, .form__check-icon__default {
   cursor: pointer;
   width: 20px;
   height: 20px;
@@ -2627,6 +2627,89 @@ background-color: $blue;
   }
   &__btn {
     @extend %btn;
+  }
+}
+
+// ========================== LOGIN =====================
+
+.login {
+  padding: 70px 0 120px;
+  background-color: #eff1f5;
+  &__content {
+    background-color: #fff;
+    max-width: 555px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 8px;
+  }
+  &__inner {
+    padding: 25px 50px 60px 25px;
+  }
+  &__top {
+    padding: 55px 0 30px;
+    border-bottom: 1px solid #e8ebf0;
+  }
+  &__title {
+    font-size: 26px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+  &__text {
+    color: #555;
+    font-size: 16px;
+    margin: 0 auto;
+    text-align: center;
+    width: 435px;
+  }
+  label {
+    p {
+      text-align: left;
+      padding-bottom: 15px;
+      font-size: 16px;
+      color: #000;
+      font-weight: 500;
+    }
+  }
+  input {
+    background-color: #f4f5f8;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #898f96;
+    &::placeholder {
+      font-size: 16px;
+      color: #898f96;
+    }
+    margin-bottom: 30px;
+  } 
+}
+.form__check {
+  position: relative;
+  padding-left: 35px;
+  text-align: left;
+  margin-bottom: 33px;
+}
+.login__btn {
+  @extend %btn;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  width: 190px;
+}
+.login__bot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  a {
+    color: $blue;
+    cursor: pointer;
+  }
+  &-text {
+    font-size: 16px;
+    color: #9ca1a6;
   }
 }
 
