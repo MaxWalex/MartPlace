@@ -124,6 +124,26 @@ textarea {
   max-width: 700px;
 }
 
+.page__top {
+  text-align: center;
+  &-title {
+    font-size: 36px;
+    color: #000;
+    span {
+      color: $blue;
+    }
+  }
+  &-text {
+    color: #555555;
+    font-size: 16px;
+    margin-top: 33px !important;
+    margin-bottom: 65px !important;
+    line-height: 30px;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+}
+
 // ======= RATEYO
 .jq-ry-group-wrapper {
   position: relative;
