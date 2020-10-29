@@ -76,6 +76,16 @@ $(function () {
     return false;
   });
 
+  $('.blog__aside-tab .tab').on('click', function (event) {
+    var id = $(this).attr('data-id');
+    $('.blog__aside-tab').find('.tab-item').removeClass('active-tab').hide();
+    $('.blog__aside-tab .tabs').find('.tab').removeClass('active');
+    $(this).addClass('active');
+    $('#' + id).addClass('active-tab').fadeIn();
+    return false;
+  });
+
+
   // ==================== CHECK ICON =========================
 
   $('.check-icon__default').on("click", function () {
